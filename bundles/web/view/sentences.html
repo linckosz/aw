@@ -1,0 +1,45 @@
+<div class="divers_display_none">
+	<link rel="stylesheet" href="[{ /brunoaw/web/styles/sentences.css }]" type="text/css" />
+	<link rel="stylesheet" href="[{ /brunoaw/web/styles/answer.css }]" type="text/css" />
+	<script src="[{ /brunoaw/web/scripts/sentences.js }]" type="text/javascript"></script>
+	<script src="[{ /brunoaw/web/scripts/answer.js }]" type="text/javascript"></script>
+	<script type="text/javascript">
+		var sentences_question_picture = false;
+		var sentences_question_style = parseInt("{{ question_style }}", 10);
+		if("{{ question_picture }}" != ""){
+			var sentences_question_picture = "[{ {{ question_picture }} }]";
+		}
+		var sentences_answers = {{ answers }}; //The object is already correctly formated by PHP
+	</script>
+</div>
+
+<div id="sentences_content">
+	<div id="sentences_content_question">
+		<img id="sentences_content_question_picture" class="divers_display_none" src="[{ /brunoaw/web/images/neutral.png }]" />
+		<span id="sentences_content_question_title">{{ question_title }}</span>
+	</div>
+	<div id="sentences_content_answers"></div>
+</div>
+
+<div class="divers_display_none">
+	<div id="-sentences_model" class="sentences_model">
+		<span find="number" class="sentences_model_number"></span>
+		<span find="title" class="sentences_model_title"></span>
+	</div>
+	<div id="-pictures_model" class="pictures_model">
+		<div find="number" class="pictures_model_number"></div>
+	</div>
+</div>
+
+<div id="answer" class="divers_display_none">
+	<div id="answer_background" class="background_gradient"></div>
+	<div id="answer_top">
+		<div>And your answer is...</div>
+		<div id="answer_count">3</div>
+		<div id="answer_info" class="divers_display_none"></div>
+		<img id="answer_image_0" class="divers_display_none answer_image" src="[{ /brunoaw/web/images/result/wrong.gif }]" />
+		<img id="answer_image_1" class="divers_display_none answer_image" src="[{ /brunoaw/web/images/result/correct.gif }]" />
+		<br />
+		<div id="answer_next" class="divers_display_none">continue</div>
+	</div>
+</div>

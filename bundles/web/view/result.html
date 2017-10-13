@@ -1,0 +1,37 @@
+<div class="divers_display_none">
+	<link rel="stylesheet" href="[{ /brunoaw/web/styles/result.css }]" type="text/css" />
+	<link rel="stylesheet" href="[{ /styles/font-awesome.min.css }]" type="text/css" />
+	<script src="[{ /brunoaw/web/scripts/result.js }]" type="text/javascript"></script>
+	<script type="text/javascript">
+		var result_questions = {{ questions }}; //The object is already correctly formated by PHP
+	</script>
+</div>
+
+<div id="result_content">
+	<div id="result_content_info">
+		<div id="result_content_info_title">{{ quiz_title }}</div>
+		<span id="result_content_info_comment">
+			{{ comment }}<br />
+			<img id="result_content_info_picture" src="[{ /brunoaw/web/images/result/{{ evaluation }}.gif }]" />
+		</span>
+	</div>
+	<div id="result_content_list"></div>
+	<div id="result_home">Home page</div>
+</div>
+
+<div class="divers_display_none">
+	<div id="-result_model" class="result_model">
+		<div class="result_model_cell">
+			<div find="result" class="result_model_result"></div>
+		</div>
+		<div class="result_model_cell">
+			<div find="question" class="result_model_question"></div>
+			<div class="result_model_answer">
+				<span find="correct" class="result_model_answer_correct">Correct answer: </span>
+				<span find="answer" class="result_model_answer_text divers_display_none"></span>
+				<img find="picture" class="result_model_answer_picture divers_display_none" src="[{ /brunoaw/web/images/neutral.png }]" />
+			</div>
+		</div>
+	</div>
+	<div id="-line_model" class="line_model"></div>
+</div>
