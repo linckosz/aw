@@ -1,4 +1,4 @@
-Andrew Alliance test By Bruno Martin (October 13th, 2017)
+Sandbox By Bruno Martin (October 13th, 2017)
 ==============
 
 Server machine Operating system
@@ -43,9 +43,8 @@ Need to go the the root directory of the application first.
 
 NOTE
 --------------
-It should be pretty obvious, but I'd prefer to remind that this code structure is not production-ready, it's only for candidature purpose.<br />
-Since user authentication was not allowed, I just used a API key to secure the communication.<br />
-Here are some advantages of this super-light MVC Framework:
+   - There is no SQL record, data are hardly coded, this sandbox is made to test and develop some frontend technologies.
+   - This is a homemade super-light PHP MVC Framework.
    - We can load only the bundles we need for a specific request (only if we want, this can help to have one singular code to maintain for frontend and backend, it can help to save time).
    - Can insert PHP variables inside HTML code like twig does.
    - Any JS file, CSS file, or picture modified will be automatically refreshed on client side, the application recognize the modification timestamp of each file, no need manual operation from the developer (for example, no need to hardly code '/images/toto.png?v=2').
@@ -57,26 +56,6 @@ Here are some advantages of this super-light MVC Framework:
 <br />
 <br />
 <br />
---------------
-
-Subject: Design and develop an HTML5/JS app allowing the user to answer a quiz and display the results
-==============
-Main features:
-   - Select a quiz (in a list of quizzes)
-   - Answer the questions
-   - Display the result
-   - Display the previous results (store locally in a file or a variable, no need to use a database)
-
-
-Demo page
---------------
-https://brunoaw.tk
-
-
-Conclusion
-==============
-Thank you for taking the time to consider my candidature as a Senior Developer.<br />
-I wish that you will be able to see the skills you are looking for in this source code.
 
 Regards,
 
